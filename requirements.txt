@@ -1,0 +1,6 @@
+# requirements.txt
+
+librosa
+numpy
+moviepy
+opencv-python

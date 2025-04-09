@@ -1,0 +1,23 @@
+audio_responsive_editor/
+│
+├── main.py                     # Main script, handles command-line arguments and orchestrates the pipeline
+│
+├── audio_processing/           # Package for audio-related functions
+│   ├── __init__.py
+│   ├── peak_detection.py       # Functions for analyzing audio and finding peaks (from audio_to_peaks.py)
+│   └── audio_utils.py          # Functions for extracting audio, handling external audio files
+│
+├── video_processing/           # Package for video-related functions
+│   ├── __init__.py
+│   ├── cutter.py               # Functions for cutting video segments (from video_cuts.py)
+│   ├── combiner.py             # Functions for combining video segments (from combine_videos.py)
+│   └── effects.py              # Module for applying different visual effects (including duotone from duotone.py)
+│
+├── utils/                      # Package for utility functions shared across modules
+│   ├── __init__.py
+│   └── file_utils.py           # Functions for file/directory handling, timestamp parsing, etc.
+│
+├── output/                     # Default directory for output files (created automatically)
+│
+├── README.md                   # Project description, setup instructions, usage examples
+└── requirements.txt            # List of Python dependencies (numpy, librosa, opencv-python, etc.)
